@@ -39,7 +39,7 @@ const NavItem = styled.div`
 
 const SupText = styled.div`
   height: 14px;
-  font-size: 12px;
+  font-size: 0.85em;
   color: #ccc;
 `;
 

@@ -9,7 +9,6 @@ const Container = styled.header`
   flex-direction: column;
   color: white;
   white-space: nowrap;
-  font-size: 14px;
 `;
 
 export default function Header() {

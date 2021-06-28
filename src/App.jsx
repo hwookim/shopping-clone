@@ -1,11 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <Header />
-    </div>
+      <Footer />
+    </Container>
   );
 }
 
