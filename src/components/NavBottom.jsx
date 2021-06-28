@@ -18,6 +18,7 @@ const NavSide = styled.div`
 const NavCenter = styled.div`
   display: flex;
   flex: 1;
+  min-width: 700px;
 `;
 
 const NavItem = styled.div`
