@@ -27,7 +27,15 @@ const NavCenter = styled.div`
 const NavItem = styled.div`
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  margin: auto 5px;
+  padding: 0 5px;
+  height: 45px;
+
+  &:hover {
+    margin: auto 4px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
 `;
 
 const SupText = styled.div`

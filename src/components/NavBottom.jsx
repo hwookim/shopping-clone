@@ -28,6 +28,7 @@ const NavItem = styled.div`
   height: 30px;
 
   &:hover {
+    margin: auto 4px;
     border: 1px solid white;
     cursor: pointer;
   }
