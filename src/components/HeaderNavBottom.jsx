@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Container = styled.nav`
   display: flex;
-  width: calc(100% - 10px);
   padding: 0 5px;
   height: 40px;
   background-color: #232f3e;
