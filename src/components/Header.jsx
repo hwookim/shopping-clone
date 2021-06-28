@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import NavTop from "./NavTop";
-import NavBottom from "./NavBottom";
+import HeaderNavTop from "./HeaderNavTop";
+import HeaderNavBottom from "./HeaderNavBottom";
 
 const Container = styled.header`
   display: flex;
@@ -15,8 +15,8 @@ const Container = styled.header`
 export default function Header() {
   return (
     <Container>
-      <NavTop />
-      <NavBottom />
+      <HeaderNavTop />
+      <HeaderNavBottom />
     </Container>
   );
 }

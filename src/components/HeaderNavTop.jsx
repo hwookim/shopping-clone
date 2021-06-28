@@ -65,7 +65,7 @@ const SearchInput = styled.input`
   height: 30px;
 `;
 
-export default function NavTop() {
+export default function HeaderNavTop() {
   return (
     <Container>
       <NavSide>

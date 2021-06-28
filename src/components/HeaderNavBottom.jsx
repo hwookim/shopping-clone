@@ -35,7 +35,7 @@ const NavItem = styled.div`
   }
 `;
 
-export default function NavBottom() {
+export default function HeaderNavBottom() {
   return (
     <Container>
       <NavSide>
