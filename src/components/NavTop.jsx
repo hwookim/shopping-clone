@@ -5,9 +5,9 @@ import Flag from "../assets/Flag_of_South_Korea.svg";
 
 const Container = styled.nav`
   display: flex;
-  width: 100%;
+  width: clac(100% - 10px);
+  padding: 0 5px;
   height: 60px;
-  padding: 0 10px;
   align-items: center;
   background-color: #131921;
 `;
