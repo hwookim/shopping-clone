@@ -14,6 +14,11 @@ const BackToTop = styled.div`
   justify-content: center;
   padding: 15px 0;
   background-color: #37475a;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #485769;
+  }
 `;
 
 export default function Footer() {
