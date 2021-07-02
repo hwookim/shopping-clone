@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import HeaderLink from "./HeaderLink";
 
 const Container = styled.nav`
   display: flex;
@@ -20,24 +21,8 @@ const NavCenter = styled.div`
   min-width: 700px;
 `;
 
-const NavItem = styled.a`
-  display: flex;
-  align-items: center;
-  margin: auto 5px;
-  padding: 0 5px;
+const NavItem = styled(HeaderLink)`
   height: 30px;
-  color: white;
-
-  &:hover {
-    margin: auto 4px;
-    border: 1px solid white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  &:visited {
-    color: white;
-  }
 `;
 
 export default function HeaderNavBottom() {

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Flag from "../assets/Flag_of_South_Korea.svg";
+import HeaderLink from "./HeaderLink";
 
 const Container = styled.nav`
   display: flex;
@@ -23,23 +24,8 @@ const NavCenter = styled.div`
   justify-content: center;
 `;
 
-const NavItem = styled.a`
-  display: flex;
-  align-items: center;
-  margin: auto 5px;
-  padding: 0 5px;
+const NavItem = styled(HeaderLink)`
   height: 45px;
-  color: white;
-
-  &:hover {
-    margin: auto 4px;
-    border: 1px solid white;
-    text-decoration: none;
-  }
-
-  &:visited {
-    color: white;
-  }
 `;
 
 const SupText = styled.div`
