@@ -23,17 +23,22 @@ const NavCenter = styled.div`
   justify-content: center;
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.a`
   display: flex;
   align-items: center;
   margin: auto 5px;
   padding: 0 5px;
   height: 45px;
+  color: white;
 
   &:hover {
     margin: auto 4px;
     border: 1px solid white;
-    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: white;
   }
 `;
 
@@ -69,7 +74,7 @@ export default function HeaderNavTop() {
     <Container>
       <NavSide>
         <Logo>LOGO</Logo>
-        <NavItem>
+        <NavItem href="/">
           <span className="material-icons-outlined">location_on</span>
           <div>
             <SupText>배송처</SupText>
@@ -81,22 +86,22 @@ export default function HeaderNavTop() {
         <SearchInput type="text" />
       </NavCenter>
       <NavSide>
-        <NavItem>
+        <NavItem href="/">
           <img src={Flag} alt="대한민국" style={{ width: "30px" }} />
         </NavItem>
-        <NavItem>
+        <NavItem href="/">
           <div>
             <SupText>안녕하세요, 로그인</SupText>
             <NavText>계정 및 목록</NavText>
           </div>
         </NavItem>
-        <NavItem>
+        <NavItem href="/">
           <div>
             <SupText>반품</SupText>
             <NavText>& 주문</NavText>
           </div>
         </NavItem>
-        <NavItem>
+        <NavItem href="/">
           <span
             className="material-icons-outlined"
             style={{ fontSize: "35px" }}

@@ -20,17 +20,23 @@ const NavCenter = styled.div`
   min-width: 700px;
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.a`
   display: flex;
   align-items: center;
   margin: auto 5px;
   padding: 0 5px;
   height: 30px;
+  color: white;
 
   &:hover {
     margin: auto 4px;
     border: 1px solid white;
+    text-decoration: none;
     cursor: pointer;
+  }
+
+  &:visited {
+    color: white;
   }
 `;
 
@@ -44,13 +50,13 @@ export default function HeaderNavBottom() {
         </NavItem>
       </NavSide>
       <NavCenter>
-        <NavItem>오늘의 딜</NavItem>
-        <NavItem>고객 서비스</NavItem>
-        <NavItem>기프트 카드</NavItem>
-        <NavItem>레지스트리</NavItem>
+        <NavItem href="/">오늘의 딜</NavItem>
+        <NavItem href="/">고객 서비스</NavItem>
+        <NavItem href="/">기프트 카드</NavItem>
+        <NavItem href="/">레지스트리</NavItem>
       </NavCenter>
       <NavSide>
-        <NavItem style={{ fontWeight: "bold" }}>
+        <NavItem href="/" style={{ fontWeight: "bold" }}>
           Click here to shop in English
         </NavItem>
       </NavSide>
