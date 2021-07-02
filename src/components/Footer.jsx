@@ -24,7 +24,7 @@ const BackToTop = styled.div`
 export default function Footer() {
   return (
     <Container>
-      <BackToTop>위로 돌아가기</BackToTop>
+      <BackToTop onClick={() => scrollTo(0, 0)}>위로 돌아가기</BackToTop>
       <FooterNav />
     </Container>
   );
