@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Flag from "../assets/Flag_of_South_Korea.svg";
 import HeaderLink from "./HeaderLink";
+import SearchBar from "./SearchBar";
 
 const Container = styled.nav`
   display: flex;
@@ -48,13 +49,6 @@ const Logo = styled.div`
   font-size: 32px;
 `;
 
-const SearchInput = styled.input`
-  margin: 0 15px;
-  width: 100%;
-  min-width: 500px;
-  height: 30px;
-`;
-
 export default function HeaderNavTop() {
   return (
     <Container>
@@ -69,7 +63,7 @@ export default function HeaderNavTop() {
         </NavItem>
       </NavSide>
       <NavCenter>
-        <SearchInput type="text" />
+        <SearchBar />
       </NavCenter>
       <NavSide>
         <NavItem href="/">
