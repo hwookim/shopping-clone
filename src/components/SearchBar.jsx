@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -58,16 +58,48 @@ const SearchBtn = styled.button`
 `;
 
 export default function SearchBar() {
+  const [searchValue, setSearchValue] = useState("");
+
+  const onChangeValue = useCallback(
+    ({ target }) => setSearchValue(target.value),
+    [searchValue]
+  );
+
+  const onKeyDownInput = useCallback(
+    ({ key }) => {
+      if (key !== "Enter") {
+        return;
+      }
+
+      onSubmitValue();
+    },
+    [searchValue]
+  );
+
+  const onSubmitValue = useCallback(() => {
+    if (!searchValue) {
+      return;
+    }
+
+    alert(searchValue);
+    setSearchValue("");
+  }, [searchValue]);
+
   return (
     <Container>
       <SearchSide>
         <SearchDropBox>모두 ▼</SearchDropBox>
       </SearchSide>
       <SearchCenter>
-        <SearchInput type="text" />
+        <SearchInput
+          type="text"
+          value={searchValue}
+          onChange={onChangeValue}
+          onKeyDown={onKeyDownInput}
+        />
       </SearchCenter>
       <SearchSide>
-        <SearchBtn>
+        <SearchBtn onClick={onSubmitValue}>
           <span className="material-icons">search</span>
         </SearchBtn>
       </SearchSide>
